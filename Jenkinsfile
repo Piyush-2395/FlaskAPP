@@ -4,7 +4,7 @@ pipeline {
     environment {
         DEPLOY_DIR = "/home/ubuntu/FlaskAPP"
         GIT_REPO = "https://github.com/Piyush-2395/FlaskAPP.git"
-        STAGING_SERVER = "43.203.228.180"
+        STAGING_SERVER = "43.203.223.180"
         CREDENTIALS_ID = "Flask_EC2" // Ensure this matches the ID in Jenkins
     }
 
