@@ -54,9 +54,9 @@ pipeline {
                         ssh -o StrictHostKeyChecking=no -i ${SSH_KEY} ${SSH_USER}@${env.STAGING_SERVER} <<EOF
 cd ${DEPLOY_DIR}
 . venv/bin/activate
-sudo apt update
-sudo apt install python3-pip
-pip install -r requirements.txt
+sudo apt update -y
+sudo apt install python3-pip -y
+pip install -r requirements.txt 
 nohup python3 app.py > flaskapp.log 2>&1 &
 EOF
                         """
