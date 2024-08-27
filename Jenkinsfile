@@ -56,6 +56,7 @@ cd ${DEPLOY_DIR}
 . venv/bin/activate
 sudo apt update -y
 sudo apt install python3-pip -y
+pip install flask
 pip install -r requirements.txt 
 nohup python3 app.py > flaskapp.log 2>&1 &
 EOF
