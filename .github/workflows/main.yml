@@ -76,7 +76,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
-            cd /home/ubuntu/flaskapp
+            cd /home/ubuntu/FlaskAPP
             sudo apt update -y
             sudo apt install python3-pip python3-venv -y
             
