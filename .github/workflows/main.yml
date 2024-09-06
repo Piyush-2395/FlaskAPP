@@ -88,4 +88,5 @@ jobs:
             
             
             pip install -r requirements.txt  # Install dependencies
+            python3 app.py
             
