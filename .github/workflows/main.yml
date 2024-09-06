@@ -80,4 +80,4 @@ jobs:
             git pull origin main  # Pull the latest changes
             source venv/bin/activate  # Activate virtual environment (if needed)
             pip install -r requirements.txt  # Install dependencies
-            sudo systemctl restart your-app.service  # Restart the service if running as a systemd service
+            
